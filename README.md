@@ -15,6 +15,7 @@ Esta es una aplicación simple creada utilizando RoR.
   - Ejecutar migraciones: `rails db:migrate`
   - Crear usuarios: `rails db:seed`
   - Levantar aplicación: `rails s`
+  - Como el puerto por defecto es el 300, ingresar en un navegador a `http://localhost:3000/`
 
 *LOS DATOS DE USUSARIOS CREADOS SON:*
 - rut: '18123456-7', name: 'Rodrigo', lastname: 'Rodriguez'
