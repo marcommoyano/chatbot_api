@@ -1,22 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta es una aplicación simple creada utilizando RoR.
 
-Things you may want to cover:
+* Versiones: 
+  - Ruby 2.6.5
+  - Rails 5.2.8.1
 
-* Ruby version
+* Gestor de Base de datos utilizado
+  - postgresql
 
-* System dependencies
+* Pasos para levantar la aplicación:
+  - instalar dependencias: `bundle install`
+  - Crear la base de datos: `rails db:create` (el usuario usado es 'postgres', en caso de tener otro usuario con permiso para crear BD se debe cambiar en database.yml)
+  - Ejecutar migraciones: `rails db:migrate`
+  - Crear usuarios: `rails db:seed`
+  - Levantar aplicación: `rails s`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+*LOS DATOS DE USUSARIOS CREADOS SON:*
+- rut: '18123456-7', name: 'Rodrigo', lastname: 'Rodriguez'
+- rut: '17123456-7', name: 'Gonzalo', lastname: 'Gonzalez'
+- rut: '16123456-7', name: 'Fernando', lastname: 'Fernandez'

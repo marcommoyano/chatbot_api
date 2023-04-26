@@ -1,0 +1,9 @@
+<meta charset="UTF-8">
+<h5 class="mt-5 mb-3">Se ha realizado una solicitud de rollo de papel exitosamente, los datos son los siguientes:</h5>
+  <ul class="pl-4 h5">
+    <p><b>Fecha:</b> <%=@transaction.created_at.getlocal.strftime("%Y-%m-%d %H:%M:%S")%></p>
+    <p><b>Rut:</b> <%=@rut%></p>
+    <p><b>Dirección:</b> <%=@transaction.adress%></p>
+    <p><b>Cantidad:</b> <%=@quantity%></p>
+    <p><b>Precio:</b> <%=@transaction.quantity%></p>
+  </ul>

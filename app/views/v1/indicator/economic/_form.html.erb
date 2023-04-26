@@ -1,0 +1,14 @@
+<h3 class="mb-5">Seleccione la fecha en la cual desea conocer los valores de los indicadores económicos:</h3>
+
+<%= form_for :indicators, url: search_v1_indicator_economic_index_path, method: :get do |f| %>
+  <div class="d-flex">
+    <div class="mr-3">
+      <%= f.label :date, t(:Fecha) %>
+      <%= f.date_field :date, class: 'datepicker', required: :true %>
+    </div>
+
+    <div class="">
+      <%= f.submit 'Enviar', class: 'btn btn-success' %>
+    </div>
+  </div>
+<% end %>

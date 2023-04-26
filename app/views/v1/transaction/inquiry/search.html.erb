@@ -1,0 +1,7 @@
+<div class="">
+  <%= render 'form' %>
+</div>
+
+<% if @json_data.present? && @json_data[:type] == :success %>
+  <h5 class="mt-5">El monto obtenido para el rut <%=@rut%> en la fecha <%=@date%> es de: <%=@json_data[:total]%></h5>
+<% end %>

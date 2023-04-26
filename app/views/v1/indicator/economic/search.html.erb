@@ -1,0 +1,12 @@
+<div class="">
+  <%= render 'form' %>
+</div>
+
+<% if @json_data.present? %>
+  <h5 class="mt-5 mb-3">Los valores encontrados para la fecha <%=@date%> son:</h5>
+  <ul class="pl-4 h5">
+    <% @json_data.each do |key, value| %>
+      <li> <%= key.upcase %>: <%=value%></li>
+    <% end %>
+  </ul>
+<% end %>

@@ -1,0 +1,13 @@
+<div class="">
+  <%= render 'form' %>
+</div>
+
+<% if @json_data.present? && @json_data[:type] == :success %>
+  <h5 class="mt-5">
+    Solicitud realizada con éxito, si desea descargar comprobante presione 
+    <%= link_to 'Descargar PDF', 
+                to_pdf_v1_paper_roll_request_index_path(transaction_id: @json_data[:transaction_id], rut: @rut, quantity: @quantity),
+                target: '_blank' %>
+  </h5>
+<% end %>
+

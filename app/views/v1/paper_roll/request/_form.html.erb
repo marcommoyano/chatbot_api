@@ -1,0 +1,24 @@
+<h3 class="mb-5">Complete los campos requeridos para realizar la solicitud de rollos de papel:</h3>
+
+<%= form_for :request, url: search_v1_paper_roll_request_index_path, method: :get do |f| %>
+  <div class="d-flex">
+    <div class="mr-3">
+      <%= f.label :rut, t(:Rut) %>
+      <%= f.text_field :rut, class: '', required: :true %>
+    </div>
+
+    <div class="mr-3">
+      <%= f.label :adress, t(:Dirección) %>
+      <%= f.text_field :adress, class: '', required: :true %>
+    </div>
+
+    <div class="mr-3">
+      <%= f.label :quantity, t(:Cantidad) %>
+      <%= f.number_field :quantity, class: '', required: :true %>
+    </div>
+
+    <div class="">
+      <%= f.submit 'Enviar', class: 'btn btn-success' %>
+    </div>
+  </div>
+<% end %>

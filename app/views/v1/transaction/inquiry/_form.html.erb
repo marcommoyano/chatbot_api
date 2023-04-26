@@ -1,0 +1,19 @@
+<h3 class="mb-5">Complete los campos requeridos para realizar la consulta de los depósitos:</h3>
+
+<%= form_for :transaction, url: search_v1_transaction_inquiry_index_path, method: :get do |f| %>
+  <div class="d-flex">
+    <div class="mr-3">
+      <%= f.label :rut, t(:Rut) %>
+      <%= f.text_field :rut, class: '', required: :true %>
+    </div>
+
+    <div class="mr-3">
+      <%= f.label :date, t(:Fecha) %>
+      <%= f.date_field :date, class: 'datepicker', required: :true %>
+    </div>
+
+    <div class="">
+      <%= f.submit 'Enviar', class: 'btn btn-success' %>
+    </div>
+  </div>
+<% end %>
