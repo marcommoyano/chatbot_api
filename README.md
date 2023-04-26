@@ -11,7 +11,7 @@ Esta es una aplicación simple creada utilizando RoR.
 
 * Pasos para levantar la aplicación:
   - instalar dependencias: `bundle install`
-  - Crear la base de datos: `rails db:create` (el usuario usado es 'postgres', en caso de tener otro usuario con permiso para crear BD se debe cambiar en database.yml)
+  - Crear la base de datos: `rails db:create`
   - Ejecutar migraciones: `rails db:migrate`
   - Crear usuarios: `rails db:seed`
   - Levantar aplicación: `rails s`
